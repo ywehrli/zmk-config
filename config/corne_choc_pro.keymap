@@ -63,10 +63,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&none  &mt LEFT_WIN Q  &mt LEFT_GUI W  &mt LEFT_ALT E  &mt LEFT_CONTROL R  &mt CAPSLOCK T  &none  &none  &kp Z        &mt RIGHT_CONTROL U  &mt RIGHT_ALT I  &mt RIGHT_GUI O  &mt RIGHT_WIN P  &none
-&none  &kp A           &kp S           &kp D           &mt LEFT_SHIFT F    &mt AT G        &none  &none  &kp H        &mt RIGHT_SHIFT J    &kp K            &kp L            &slashDT         &none
-&none  &kp Y           &kp X           &kp C           &kp V               &kp B                         &kp N        &kp M                &commaDT         &dotDT           &dashDT          &none
-                                       &lt 6 ESCAPE    &lt 5 TAB           &lt 4 SPACE                   &lt 3 ENTER  &lt 2 BACKSPACE      &lt 1 DEL
+&none  &kp Q  &mt LEFT_GUI W  &mt LEFT_ALT E  &mt LEFT_CONTROL R  &mt CAPSLOCK T  &none  &none  &kp Z        &mt RIGHT_CONTROL U  &mt RIGHT_ALT I  &mt RIGHT_GUI O  &kp P     &none
+&none  &kp A  &kp S           &kp D           &mt LEFT_SHIFT F    &mt AT G        &none  &none  &kp H        &mt RIGHT_SHIFT J    &kp K            &kp L            &slashDT  &none
+&none  &kp Y  &kp X           &kp C           &kp V               &kp B                         &kp N        &kp M                &commaDT         &dotDT           &dashDT   &none
+                              &lt 6 ESCAPE    &lt 5 TAB           &lt 4 SPACE                   &lt 3 ENTER  &lt 2 BACKSPACE      &lt 1 DEL
             >;
         };
 
