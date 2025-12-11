@@ -48,6 +48,20 @@
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp UNDERSCORE>;
         };
+
+        ctrlC: ctrlC {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CTRLC";
+            #binding-cells = <0>;
+            bindings = <&kp C>, <&kp K_COPY>;
+        };
+
+        ctrlV: ctrlV {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CTRLV";
+            #binding-cells = <0>;
+            bindings = <&kp V>, <&kp K_PASTE>;
+        };
     };
 
     keymap {
@@ -65,7 +79,7 @@
             bindings = <
 &none  &kp Q  &mt LEFT_GUI W  &mt LEFT_ALT E  &mt LEFT_CONTROL R  &mt CAPSLOCK T  &none  &none  &kp Z        &mt RIGHT_CONTROL U  &mt RIGHT_ALT I  &mt RIGHT_GUI O  &kp P     &none
 &none  &kp A  &kp S           &kp D           &mt LEFT_SHIFT F    &mt AT G        &none  &none  &kp H        &mt RIGHT_SHIFT J    &kp K            &kp L            &slashDT  &none
-&none  &kp Y  &kp X           &kp C           &kp V               &kp B                         &kp N        &kp M                &commaDT         &dotDT           &dashDT   &none
+&none  &kp Y  &kp X           &ctrlC          &ctrlV              &kp B                         &kp N        &kp M                &commaDT         &dotDT           &dashDT   &none
                               &lt 6 ESCAPE    &lt 5 TAB           &lt 4 SPACE                   &lt 3 ENTER  &lt 2 BACKSPACE      &lt 1 DEL
             >;
         };
